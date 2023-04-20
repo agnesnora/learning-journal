@@ -60,6 +60,12 @@ nav ul {
   margin: 0 auto;
 }
 
+.grid--section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1em;
+}
+
 footer {
   background-color: #202020;
   padding: 1.7em 0;
