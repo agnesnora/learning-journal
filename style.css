@@ -144,7 +144,7 @@ h2 {
 .view--more > a {
   display: block;
   text-align: center;
-  margin: 1em auto 2em;
+  padding-bottom: 1.5em;
   color: #000;
   font-weight: 700;
   font-size: 1rem;
@@ -176,6 +176,9 @@ MEDIA QUERIES ************/
 
   .article--featured--intro {
     padding-bottom: 2em;
+  }
+  .view--more > a {
+    background-color: #fafafa;
   }
 }
 
@@ -219,8 +222,8 @@ section > h4 {
   width: 100%;
 }
 
-main {
-  margin: 0 1.5em;
+.about--me--container {
+  padding: 1em 1.5em;
 }
 
 .about--me--hero > img {
