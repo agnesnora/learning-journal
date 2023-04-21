@@ -53,17 +53,21 @@ nav ul {
 }
 
 .article--recent img {
-  width: 90%;
+  width: 100%;
   object-fit: cover;
   text-align: center;
   display: block;
   margin: 0 auto;
 }
 
-.grid--section {
+.articles--container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin-bottom: 0;
+}
+
+article {
+  border: 2px solid orchid;
 }
 
 footer {
@@ -74,6 +78,11 @@ footer {
 
 /************** 
 TYPOGRAPHY ************/
+
+.navbar > li > a {
+  color: #000;
+  text-decoration: none;
+}
 
 li {
   list-style: none;
@@ -101,6 +110,12 @@ li {
   font-weight: 700;
   font-size: 2rem;
 }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.2em;
+}
 .article--featured--date {
   font-size: 0.75rem;
   line-height: 1.5;
@@ -111,7 +126,73 @@ li {
   margin: 2em 1.25em;
 }
 
+.article--date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.view--more > a {
+  display: block;
+  text-align: center;
+  margin: 1em auto 2em;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 footer p {
   font-size: 0.75rem;
   color: #ececec;
+}
+
+/************** 
+MEDIA QUERIES ************/
+
+@media (min-width: 570px) {
+  .article--featured > p {
+    text-align: start;
+    max-width: 70%;
+  }
+}
+
+/********************************************************************** FEATURED.HTML******************************************************************************
+
+/************** 
+LAYOUT ************/
+
+.article--read--featured > img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  object-fit: cover;
+}
+
+.container--read--post {
+  margin: 0 1.25em;
+}
+
+.article--read--featured > img {
+  width: 100%;
+}
+
+.recent--posts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+section > h4 {
+  text-align: center;
+}
+
+.article--recent--read > img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
 }
