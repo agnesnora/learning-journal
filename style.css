@@ -18,7 +18,8 @@ header {
 }
 
 .hero {
-  grid-area: hero;
+  height: 30%;
+  display: inline-block;
 }
 .header--container {
   margin: 0.5em 1.5em 0em;
@@ -48,8 +49,13 @@ nav ul {
   background-image: url("./images/article-image-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  padding: 2em 1.25em 1em;
+  height: 30vh;
+}
+
+.article--featured--title > a {
+  text-decoration: none;
+  color: white;
+  margin-top: 0;
 }
 
 .article--recent img {
@@ -63,11 +69,7 @@ nav ul {
 .articles--container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  margin-bottom: 0;
-}
-
-article {
-  border: 2px solid orchid;
+  margin: 0;
 }
 
 footer {
@@ -109,6 +111,7 @@ li {
 .article--featured h1 {
   font-weight: 700;
   font-size: 2rem;
+  margin: 0 auto;
 }
 
 h2 {
@@ -120,6 +123,11 @@ h2 {
   font-size: 0.75rem;
   line-height: 1.5;
   text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+.article--featured--intro {
+  margin-top: 0.4em;
 }
 
 .article--recent {
@@ -155,6 +163,19 @@ MEDIA QUERIES ************/
   .article--featured > p {
     text-align: start;
     max-width: 70%;
+    vertical-align: sub;
+  }
+  .container--read--post {
+    margin: 0;
+  }
+  .article--featured {
+    height: 40vh;
+    padding-left: 2em;
+    padding-top: 10em;
+  }
+
+  .article--featured--intro {
+    padding-bottom: 2em;
   }
 }
 
@@ -172,7 +193,8 @@ LAYOUT ************/
 }
 
 .container--read--post {
-  margin: 0 1.25em;
+  margin: 0;
+  padding: 1.5em;
 }
 
 .article--read--featured > img {
@@ -195,4 +217,26 @@ section > h4 {
   text-align: center;
   margin: 0 auto;
   width: 100%;
+}
+
+main {
+  margin: 0 1.5em;
+}
+
+.about--me--hero > img {
+  margin-top: 1.5em;
+}
+
+/********************************************************************** ABOUTME.HTML******************************************************************************/
+
+@media (min-width: 570px) {
+  .about--me--hero > img {
+    margin-top: 3em;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+  }
 }
