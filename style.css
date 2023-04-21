@@ -4,9 +4,9 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Source Sans Pro", sans-serif;
-  max-width: 100vw;
+  max-width: 1085px;
 }
 
 /************** 
